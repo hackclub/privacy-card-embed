@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+html {
+  background: rgb(17, 28, 49);
+  color: white;
+  font-size: 2em;
+}
+
+#card {
+  width: 337.0px;
+  height: 212.5px;
+  padding: 1em;
+  border: 1px solid;
+  border-radius: 20px;
+  background-image: url('chip.svg');
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: 10% 45%; 
+  background-size: 15%;
+  position: absolute;
+}
+
+#pan {
+  font-family: 'Courier Prime', monospace;
+  position: absolute;
+  top: 20%
+}
+
+#pan>* {
+  color: blue;
+}
+
+#expiry {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  font-family: 'Roboto', monospace;
+}
+#expiry::before {
+  content: "GOOD\ATHRU";
+  white-space: pre-wrap;
+  letter-spacing: 0.25rem;
+  font-size: 0.25em;
+  font-family: 'Roboto', monospace;
+  position: absolute;
+  /* top: -40%; */
+  left: -60%;
+  bottom: 10%;
+}
+#cvv {
+  position: absolute;
+  bottom: 10%;
+  font-style: italic;
+  font-family: 'Courier Prime', monospace;
+  background: white;
+  color: black;
+}
+#cvv::before {
+  content: 'CVV';
+  padding: 1em;
+  color: white;
+  background: black;
+  font-size: 0.5rem;
+  font-family: 'Roboto', monospace;
+  font-style: italic;
+}
